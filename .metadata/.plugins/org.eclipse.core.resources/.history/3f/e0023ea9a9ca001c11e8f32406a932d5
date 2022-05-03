@@ -1,0 +1,53 @@
+package com.model.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.model.dto.MyTest;
+
+public class MyTestDao {
+	private Connection con;
+	
+	public MyTestDao(Connection con) {
+		super();
+		this.con = con;
+	}
+	
+	//selectAll
+	public List<MyTest> getAll(){
+		Statement stmt =null;
+		ResultSet rs =null;
+		List<MyTest> my =new ArrayList<MyTest>();
+		String sql = " SELECT * FROM MYTEST ";
+		
+		try {
+			stmt = con.createStatement();
+			rs = stmt.executeQuery(sql);
+			
+			while(rs.next()) {
+				MyTest tmp = new MyTest(rs.getInt(1),rs.getString(2),rs.getString(3));
+				my.add(tmp);
+			}
+		} catch (SQLException e) {
+			System.out.println("[ERROR] select");
+			e.printStackTrace();
+		}
+		return my;
+	}
+	//insert
+	public int insert(MyTest input) {
+		return 0;
+	}
+	//update
+	public int update(MyTest input) {
+		return 0;
+	}
+	//delete
+	public int delete(int no) {
+		return 0;
+	}
+}

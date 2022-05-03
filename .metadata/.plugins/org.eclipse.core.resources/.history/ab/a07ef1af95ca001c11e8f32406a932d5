@@ -1,0 +1,31 @@
+package com.test01;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import static common.JDBCTemplate.*;
+public class JDBCTest03 {
+	//insert - MYTEST table
+	public static void main(String[] args) throws SQLException { 
+		//준비
+		Connection con = null;
+		Statement stmt = null;
+		
+		String sql = "INSERT INTO MYTEST VALUES(1, 'LEE', 'LCJ') ";
+		
+		con = getConnection();
+		stmt = con.createStatement();
+		int res = stmt.executeUpdate(sql);
+		
+		if(res>0) {
+			System.out.println("insert 성공");
+		}else {
+			System.out.println("insert 실패");
+		}
+		
+		Close(stmt);
+		Close(con);
+	}
+}
