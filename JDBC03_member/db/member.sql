@@ -15,7 +15,15 @@ create table member(
 INSERT INTO member VALUES(NULL,'박세인',19,'M','화성','강사','010-1234-5678','LEECJ@lee.com');
 select *from member;
 
+create table BOARD(
+	no int primary key 글번호,
+	title varchar(100) not null 제목,
+	writer varchar(100) not null 작성자,
+	content varchar(500) not null 내용,
+	regdate date not null 날짜
+);
+
+drop table board;
 
 
-
-
+ 

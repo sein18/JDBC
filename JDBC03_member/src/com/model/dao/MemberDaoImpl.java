@@ -108,6 +108,7 @@ public class MemberDaoImpl implements MemberDao {
 		try {
 			pstm = con.prepareStatement(deleteSql);
 			pstm.setInt(1, no);
+			
 			res = pstm.executeUpdate();
 		
 		} catch (SQLException e) { 

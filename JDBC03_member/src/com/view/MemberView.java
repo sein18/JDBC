@@ -102,9 +102,9 @@ public class MemberView {
 				break;
 			case 5:
 				System.out.println("---삭제---");
-				System.out.print("번호 입력: ");
-				int deRes = mc.delete(sc.nextInt());
-				if (deRes > 0) {
+				System.out.print("삭제할 번호 입력: ");
+				int delRes = mc.delete(sc.nextInt());
+				if (delRes > 0) {
 					System.out.println("삭제 성공");
 				} else {
 					System.out.println("삭제 실패");
