@@ -1,10 +1,13 @@
-package com.test;
+package com.test1;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Run {	
+import com.test1.Board;
+
+public class Run {
+
 	public static void main(String[] args) {
 		List<Board> listb = new ArrayList<Board>();
 		listb.add(new Board(1,"안녕하세요","홍길동",new Date(),"처음 작성 하는 글입니다.",1));
@@ -14,6 +17,6 @@ public class Run {
 		listb.add(new Board(1,"물어볼게 있습니다.","신사임당",new Date(),"탈퇴는 어떻게 하는건가요?",9));
 		for(int i=0;i<listb.size();i++) {
 			System.out.println(listb.get(i)); 
-		}
-	}
+		}	}
+
 }

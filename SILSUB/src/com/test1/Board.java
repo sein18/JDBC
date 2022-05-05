@@ -1,4 +1,4 @@
-package com.test;
+package com.test1;
 
 import java.util.Date;
 
@@ -63,7 +63,4 @@ public class Board {
 		return "Board [boardNo=" + boardNo + ", boardTitle=" + boardTitle + ", boardWiriter=" + boardWiriter
 				+ ", boardDate=" + boardDate + ", boardContent=" + boardContent + ", readCount=" + readCount + "]";
 	}
-	
-	
-	
 }
