@@ -7,3 +7,6 @@ create table BOARD(
 );
 
 drop table board;
+
+insert into board values(1,'hi','wew','ewewew',now());
+select *from board;
