@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="com.model.dao.MyTestDao"/>
     <fullyQualifiedTypeName name="com.model.dto.MyTest"/>
     <fullyQualifiedTypeName name="com.mysql.cj.protocol.Resultset"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.controller.MemberController"/>
     <fullyQualifiedTypeName name="com.model.dto.Member"/>
@@ -22,6 +21,7 @@
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="com.test2.Board"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.test2.Board"/>
 </qualifiedTypeNameHistroy>
